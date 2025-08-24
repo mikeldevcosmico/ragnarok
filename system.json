@@ -4,7 +4,7 @@
   "version": "0.1.2",
   "url": "https://github.com/mikeldevcosmico/ragnarok",
   "manifest": "https://raw.githubusercontent.com/mikeldevcosmico/ragnarok/main/system.json",
-  "download": "https://https://github.com/mikeldevcosmico/ragnarok/archive/refs/tags/v0.1.2.zip",
+  "download": "https://github.com/mikeldevcosmico/ragnarok/releases/download/v0.1.2/ragnarok-v0.1.2.zip",
   "minimumCoreVersion": "10",
   "compatibleCoreVersion": "12.331",
   "author": "Barakataka",
