@@ -1,25 +1,14 @@
 {
   "name": "ragnarok",
   "title": "Ragnarok (3ª edición)",
-  "description": "Sistema de rol de terror contemporáneo para Foundry VTT basado en Ragnarok 3ª edición.",
   "version": "0.1.2",
+  "url": "https://github.com/mikeldevcosmico/ragnarok",
+  "manifest": "https://raw.githubusercontent.com/mikeldevcosmico/ragnarok/main/system.json",
+  "download": "https://https://github.com/mikeldevcosmico/ragnarok/archive/refs/tags/v0.1.2.zip",
   "minimumCoreVersion": "10",
   "compatibleCoreVersion": "12.331",
   "author": "Barakataka",
-  "esmodules": [
-    "module/config.js",
-    "module/ragnarok-actor-sheet.js",
-    "module/ragnarok.js"
-  ],
-  "styles": [
-    "module/styles.css"
-  ],
-  "packs": [],
-  "languages": [
-    {
-      "lang": "es",
-      "name": "Español",
-      "path": "lang/es.json"
-    }
-  ]
+  "esmodules": ["module/config.js","module/ragnarok-actor-sheet.js","module/ragnarok.js"],
+  "styles": ["module/styles.css"],
+  "languages": [{"lang": "es","name": "Español","path": "lang/es.json"}]
 }

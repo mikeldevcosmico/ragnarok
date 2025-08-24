@@ -14,7 +14,8 @@ export class RagnarokActorSheet extends ActorSheet {
      *                  CSS classes, the HTML template path, and dimensions for the sheet.
      */
     static get defaultOptions() {
-        return mergeObject(super.defaultOptions, {
+        return foundry.utils.mergeObject
+(super.defaultOptions, {
             classes: ["ragnarok", "sheet", "actor"],
             template: "systems/ragnarok/module/actor-sheet.html",
             width: 800,
