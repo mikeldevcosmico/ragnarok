@@ -1,0 +1,100 @@
+<form class="{{cssClass}}" autocomplete="off">
+        <div class="sheet-banner">
+        <img src="systems/ragnarok/module/assets/banner.png" alt="RAGNAROK 3ª Edición">
+    </div>
+
+    <section class="card">
+        <h3>Atributos</h3>
+        <div class="atts3x3">
+            <!-- Zona de atributos: 2 columnas x 3 filas -->
+            <div class="atts3x3-attrs">
+                {{#each system.atributos as |val key|}}
+                <div class="attr-cell">
+                    <label>{{lookup ../config.ATTRIBUTES key}}</label>
+                    <input type="number" name="system.atributos.{{key}}" value="{{val}}">
+                </div>
+                {{/each}}
+            </div>
+            <!-- Zona de imagen: 1 columna x 3 filas -->
+            <div class="atts3x3-img">
+                <img class="actor-portrait" src="{{actor.img}}" data-edit="img" title="{{actor.name}}">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="card">
+        <h3>Dificultad</h3>
+        <div class="grid grid-tight">
+            <label for="rng-dif">
+                Dificultad
+                {{#with (lookup config.DIFICULTIES system.dificultadSeleccionada)}}
+                <span class="dif-label">{{nombre}} ({{valor}})</span>
+                {{/with}}
+            </label>
+            <div>
+                <input
+                        id="rng-dif"
+                        type="range"
+                        name="system.dificultadSeleccionada"
+                        min="0"
+                        max="{{difficultyMaxIdx}}"
+                        step="1"
+                        value="{{system.dificultadSeleccionada}}"
+                        list="difs"
+                >
+                <datalist id="difs">
+                    {{#each config.DIFICULTIES as |dif idx|}}
+                    <option value="{{idx}}" label="{{dif.nombre}}"></option>
+                    {{/each}}
+                </datalist>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="card">
+        <h3>Habilidades</h3>
+        <div class="skills-grid-3x2">
+            {{#each attrOrder as |attrKey|}}
+            <div class="skills-cell">
+                <div class="skills-cell-header">
+                    {{lookup ../config.ATTRIBUTES attrKey}}
+                </div>
+                <div class="skills-list">
+                    {{#each (lookup ../skillsByAttr attrKey) as |skillObj|}}
+                    <div class="skill-row">
+                        <label class="skill-name" data-skill="{{skillObj.key}}">{{skillObj.label}}</label>
+                        <input type="number" name="system.habilidades.{{skillObj.key}}" value="{{skillObj.value}}">
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </section>
+    <!-- Nueva hoja/sección de trasfondo -->
+    <section class="card" id="lore">
+        <h3>Recorrido</h3>
+        <div class="lore-grid">
+            <div class="lore-card lore--trasfondo lore-flex">
+                <h3>Trasfondo</h3>
+                <textarea class="lore-text" name="system.lore.trasfondo" placeholder="Historia, origen, motivaciones...">{{system.lore.trasfondo}}</textarea>
+            </div>
+            <div class="lore-card lore--secretos">
+                <h3>Secretos</h3>
+                <textarea class="lore-text" name="system.lore.secretos" placeholder="Secretos personales, pactos, deudas...">{{system.lore.secretos}}</textarea>
+            </div>
+            <div class="lore-card lore--avistamientos">
+                <h3>Avistamientos</h3>
+                <textarea class="lore-text" name="system.lore.avistamientos" placeholder="Encuentros, fenómenos y pistas...">{{system.lore.avistamientos}}</textarea>
+            </div>
+            <div class="lore-card lore--notas">
+                <h3>Notas</h3>
+                <textarea class="lore-text" name="system.lore.notas" placeholder="Notas varias de juego...">{{system.lore.notas}}</textarea>
+            </div>
+        </div>
+    </section>
+
+</form>

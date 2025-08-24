@@ -1,0 +1,75 @@
+{
+  "Actor": {
+    "types": [
+      "character",
+      "npc"
+    ],
+    "templates": {
+      "common": {
+        "atributos": {
+          "INT": 10,
+          "VOL": 10,
+          "REF": 10,
+          "FUE": 10,
+          "RES": 10,
+          "CAR": 10
+        },
+        "habilidades": {
+          "alerta": 0,
+          "ciencias": 0,
+          "cultura_popular": 0,
+          "informatica": 0,
+          "investigacion": 0,
+          "medicina": 0,
+          "ocultismo": 0,
+          "supervivencia": 0,
+          "arte": 0,
+          "empatia": 0,
+          "mando": 0,
+          "sigilo": 0,
+          "armas_cortas": 0,
+          "armas_largas": 0,
+          "armas_blancas": 0,
+          "atletismo": 0,
+          "conducir": 0,
+          "esquivar": 0,
+          "mecanismos": 0,
+          "pelea": 0,
+          "potencia_fisica": 0,
+          "nadar": 0,
+          "trepar": 0,
+          "tratar_heridas": 0,
+          "comercio": 0,
+          "enganar": 0,
+          "intimidar": 0,
+          "persuasion": 0
+        },
+        "pv": 10,
+        "pl": 3,
+        "estres": 0
+      }
+    },
+    "character": {
+      "templates": [
+        "common"
+      ]
+    },
+    "npc": {
+      "templates": [
+        "common"
+      ]
+    }
+  },
+  "Item": {
+    "types": [
+      "weapon",
+      "artifact"
+    ],
+    "weapon": {
+      "damage": "1d6"
+    },
+    "artifact": {
+      "effect": ""
+    }
+  }
+}

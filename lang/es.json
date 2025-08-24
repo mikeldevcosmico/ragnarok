@@ -1,0 +1,46 @@
+{
+  "RAGNAROK": "Ragnarok",
+  "ATTRIBUTES": {
+    "INT": "Inteligencia",
+    "VOL": "Voluntad",
+    "REF": "Reflejos",
+    "FUE": "Fuerza",
+    "RES": "Resistencia",
+    "CAR": "Carisma"
+  },
+  "STATS": {
+    "PV": "Puntos de Vida",
+    "PL": "Puntos de Luz",
+    "ESTRES": "Estrés"
+  },
+  "SKILLS": {
+    "alerta": "Alerta",
+    "ciencias": "Ciencias",
+    "cultura_popular": "Cultura Popular",
+    "informatica": "Informática",
+    "investigacion": "Investigación",
+    "medicina": "Medicina",
+    "ocultismo": "Ocultismo",
+    "supervivencia": "Supervivencia",
+    "arte": "Arte",
+    "empatia": "Empatía",
+    "mando": "Mando",
+    "sigilo": "Sigilo",
+    "armas_cortas": "Armas Cortas",
+    "armas_largas": "Armas Largas",
+    "armas_blancas": "Armas Blancas",
+    "atletismo": "Atletismo",
+    "conducir": "Conducir",
+    "esquivar": "Esquivar",
+    "mecanismos": "Mecanismos",
+    "pelea": "Pelea",
+    "potencia_fisica": "Potencia Física",
+    "nadar": "Nadar",
+    "trepar": "Trepar",
+    "tratar_heridas": "Tratar Heridas",
+    "comercio": "Comercio",
+    "enganar": "Engañar",
+    "intimidar": "Intimidar",
+    "persuasion": "Persuasión"
+  }
+}
